@@ -1,0 +1,15 @@
+/* ====================================================================================================
+	FONTS-FACE
+	==================================================================================================== */
+
+/* MODERN PICTOGRAMS NORMAL */
+@font-face {
+    font-family: 'ModernPictogramsNormal';
+    src: url('modernpictograms/modernpics-webfont.eot');
+    src: url('modernpictograms/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('modernpictograms/modernpics-webfont.woff') format('woff'),
+         url('modernpictograms/modernpics-webfont.ttf') format('truetype'),
+         url('modernpictograms/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

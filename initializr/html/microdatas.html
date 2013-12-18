@@ -1,0 +1,125 @@
+<!-- ==================================================================================================== -->
+<!--
+	TEMPLATES HTML AVEC MICRODATAS
+	Voir documentation sur shema.org
+-->
+<!-- ==================================================================================================== -->
+
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- ARTICLE -->
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<article itemscope itemtype="http://schema.org/Article">
+	<header>
+		<h1 itemprop="name">Titre</h1>
+		<h2 itemprop="headline">Chapeau</h2>
+		<span itemprop="dateCreated" datetime="2012-11-20T20:00">Date de création</span>
+		<span itemprop="creator">Auteur</span>
+	</header>
+	<!--<section itemprop="text">-->
+	<section itemprop="articleBody">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	<footer>
+		<a href="http://lien_vers_article.html" itemprop="url">Lien vers article</a>
+	</footer>
+</article>
+
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- ÉVÈNEMENT -->
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<article itemscope itemtype="http://schema.org/Event">
+	<hgroup>
+		<h1 itemprop="name">Kiwiparty 2051</h1>
+		<p>Proposée par <span itemprop="attendee" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Raphaël</span> et <span itemprop="colleague">Rodolphe</span> - <span itemprop="affiliation">Alsacréations</span></span></p>
+	</hgroup>
+	<section itemprop="description">
+		<p>Cette 52e édition vous permettra de découvrir les nouvelles balises HTML 13, La spécification CSS 9.2.a et bien d'autres nouveautés. Venez nombreux !</p>
+	</section>
+	<footer>Lieu : <span itemprop="location">Epitech</span> | Date : <time itemprop="startDate" datetime="2051-04-01T09:00">1er avril 2051 à 9h00</footer>
+</article>
+
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- CORPORATION -->
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<div itemscope itemtype="http://schema.org/Corporation">
+    <h1 itemprop="name">Alsacréations</h1>
+    <h2>À propos</h2>
+    <p itemprop="description">Alsacréations est une innovante agence de créations et services numériques, créée en <time itemprop="foundingDate" datetime="2006-01-06">2006</time> par <span itemprop="founders">Raphaël Goetter</span> et <span itemprop="founders">Rodolphe Rimelé</span> et localisée à Strasbourg, capitale européenne. Elle compte actuellement 6 collaborateurs (développeurs, graphistes, experts) et répond à tous types de projets, d'envergure régionale, nationale ou internationale.</p>
+    <p>Alsacréations est également organisatrice de la <span itemprop="events">conférence Web <a href="http://kiwiparty.fr">KiwiParty</a></span>.</p>
+    <h2>Contact</h2>
+    <p itemprop="contactPoints">
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">10, place du Temple Neuf</span><br />
+            <span itemprop="postalCode">67000</span>
+            <span itemprop="addressLocality">Strasbourg</span>,
+            <meta itemprop="addressCountry" content="FR" />France
+        </span><br />
+        <span itemprop="telephone">0954965050</span>
+    </p>
+    <p><a href="http://alsacreations.fr/" itemprop="url">Site Web</a></p>
+    <h2>L'équipe</h2>
+    <ul itemprop="employees" itemscope>
+        <li><a href="equipe.html#raphael">Raphaël</a></li>
+        <li><a href="equipe.html#rodolphe">Rodolphe</a></li>
+        <li itemprop="name"><a href="equipe.html#philippe">Philippe</a></li>
+        <li itemprop="name"><a href="equipe.html#simon">Simon</a></li>
+        <li itemprop="name"><a href="equipe.html#geoffrey">Geoffrey</a></li>
+        <li itemprop="name"><a href="equipe.html#guillaume">Guillaume</a></li>
+        <li itemprop="name"><a href="equipe.html#stephanie">Stéphanie</a></li>
+        <li itemprop="name"><a href="equipe.html#jennifer">Jennifer</a></li>
+    </ul>
+</div>
+
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- HCARD -->
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<div id="hcard-Raphaël-Goetter" class="vcard">
+	<a class="url fn" href="http://alsacreations.fr">Raphaël Goetter</a>
+	<div class="org">Alsacréations</div>
+	<a class="email" href="bob.eponge@exemple.com">bob.eponge@exemple.com</a>
+	<div class="adr">
+		<div class="street-address">10 Place du Temple Neuf</div>
+		<span class="postal-code">67000</span>
+		<span class="locality">Strasbourg</span>
+		<span class="country-name">France</span>
+	</div>
+	<div class="tel">09 54 96 50 50</div>
+</div>
+
+<dl id="hcard-Raph-Goetter2" class="vcard">
+	<dt><a class="url fn" href="http://alsacreations.fr">Raphaël Goetter</a></dt>
+	<dd class="org">Organisation : <span class="value">Alsacréations</span></dd>
+	<dd>Courriel : <a class="email" href="mailto:bob.eponge@exemple.com">bob.eponge@exemple.com</a></dd>
+	<dd>
+		<dl  class="adr">
+			<dt>Adresse :</dt>
+			<dd class="street-address">10 Place du Temple Neuf</dd>
+			<dd>
+				<span class="postal-code">67000</span> 
+				<span class="locality">Strasbourg</span> 
+				<span class="country-name">France</span>
+			</dd>
+		</dl>
+	</dd>
+	<dd class="tel">Téléphone : <span class="value">09 54 96 50 50</span></dd>
+</dl>
+
+<section itemtype="http://microformats.org/profile/hcard" itemscope>
+	<h1 itemprop="fn">Tony Stark</h1>
+	<div itemprop="adr" itemscope>
+		<p itemprop="street-address">56, rue du fer</p>
+		<p itemprop="locality">Ironheim</p>
+		<p itemprop="postal-code">67 999</p>
+	</div>
+	<a href="http://marvel.com/characters/bio/1009368/iron_man/" itemprop="url">Ma biographie</a>
+</section>
+
+
+
+
+
